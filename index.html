@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | Compreendendo seus conceitos básicos</title>
+</head>
+<body>
+    <h1 id="inicio">Elementos básicos do HTML</h1>
+    <hr>
+    <h2>Índice</h2>
+    <ol>
+        <li><a href="#html" > O que é HTML?</a></li>
+        <li><a href="#estrutura" >Estrutura básica de um HTML</a></li>
+        <li><a href="#tags" >Tags mais utilizadas</a></li>
+    </ol>
+
+    <h2 id="html">O que é HTML?</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>HTML, em inglês, significa <i>"HyperText Markup Language"</i> (Linguagem de marcação de hipertexto). </p>
+    <p>Criado no início da década de 1990 por <u>Tim Berners-Lee</u> (um físico da <abbr title="sigla em francês que em português signifca 'Organização Europeia para a Pesquisa Nuclear'">CERN</abbr>) o HTML não é uma linguagem de programação, mas sim uma linguagem de marcação que ordena os elementos de uma página, separando-os conforme sua relevância (parágrafo, título, subtítulo etc). </p>
+    <p>Dentre suas funções, o HTML também possibilita a inserção de cores, imagens, links e listas. </p>
+    <p><del>Para a inserção de cores e fontes estilizadas utiliza-se a tag < font ></del>. Ou melhor dizendo, antigamente para a inserção de cores e fontes estilizadas se utilizava a tag < font >. Atualmente, no HTML5, essa tag não é mais suportada e foi substituída por propriedades do CSS.</p>
+    <p> A essa mistura de textos com recursos de estilo e mídia dá-se o nome de <mark><u>hipertexto</u></mark>. </p>
+    <p>Como resultado é possível criar uma estrutura, um esqueleto de uma página, um conteúdo.</p>
+
+
+    <h2 id="estrutura">Estrutura básica de um HTML</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Todos os documentos HTML começam com uma declaração de tipo de documento: "< !DOCTYPE html >". 
+        Essa declaração geralmente aparece no início do documento HTML e ajuda os navegadores a 
+        renderizarem corretamente a página.</p>
+    <p>O documento HTML mesmo começa com < html > e termina com < /html >. Tudo o que estiver entre 
+        esse comando é um documento HTML.</p>
+    <p>A parte visível do documento HTML fica entre < body > e < /body >. Na tradução literal para o português, 
+        "body" significa "corpo". Então podemos dizer que o corpo do documento é a parte que o usuário pode 
+        ver e interagir. </p>
+
+    <h2 id="tags">Tags mais utilizadas</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>As tags em HTML são elementos fundamentais usadas para estruturar e formatar conteúdo em uma página da 
+        web. Elas são cercadas por colchetes angulares (< e >) e geralmente aparecem em pares: uma tag de 
+        abertura e uma tag de fechamento. Por exemplo: </p>
+    <p>< p > Isto é um parágrafo < /p > </p>
+    <p>Neste caso, < p > é a tag de abertura que indica o início do parágrafo, e < /p > é a tag de fechamento 
+        que indica o final do parágrafo. </p>
+    <p>Em alguns casos as tags não possuem pares. Isto é o que chamamos de tag de autocompletar, o que 
+        significa que ela não possui uma tag de fechamento correspondente, como é o caso da < hr > 
+        usada para criar uma linha horizontal em uma página da web. Geralmente é usada para separar seções 
+        ou elementos visuais distintos.  Só é preciso digitar < hr > para ela funcionar, não existindo a 
+        necessidade de um fechamento < /hr >. </p>
+    <p>Também existem as tags que utilizam atributos para o seu melhor desempenho, como o apresentado abaixo 
+        na tag < a >, utilizada para a inserção de links:</p>
+    <p>< a href = "https://web.dio.me"> Nome do link < /a > </p>
+    <p>Nesta caso, o href é responsável por especificar o destino do link. O href é o que chamamos de 
+        atributo, utilizado para fornecer informações adicionais sobre os elementos HTML.</p>
+    <p>As tags em HTML são usadas para criar diferentes tipos de elementos, como parágrafos, títulos, 
+        listas, links, formulários e muito mais, permitindo assim a criação de páginas web com estrutura e 
+        funcionalidades variadas. </p>
+    <p>Além das citadas anteriormente podemos encontrar com mais frequência as seguintes tags: </p>
+    <ul>
+        <li>< h1 > até < h6 >: definem os títulos e seu grau de importância, sendo < h1 > o título mais importante e o < h6 > o menos importante. </li>
+        <h1>Texto com a tag < h1 ></h1>
+        <h2>Texto com a tag < h2 ></h2>
+        <h3>Texto com a tag < h3 ></h3>
+        <h4>Texto com a tag < h4 ></h4>
+        <h5>Texto com a tag < h5 ></h5>
+        <h6>Texto com a tag < h6 ></h6>
+
+        <li>< p >: esta tag define um páragrafo. Um parágrafo sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço em branco (uma margem) antes e depois de um parágrafo. </li>
+        <li>< mark >: elemento que define o texto que deve ser <mark>marcado</mark> ou <mark>destacado</mark>.</li>
+        <li>< small >: esta tag faz com que o texto fique escrito num <small>tamanho menor</small> do que o texto normal. </li>
+        <li>< i >: quando utilizada, essa tag deixa o conteúdo interno em itálico. A tag < i > costuma ser utilizada para indicar um <i>termo técnico, uma frase de outro idioma ou um pensamento</i>, por exemplo.</i></li>
+        <li>< u >: é usada para aplicar <u>sublinhado</u> ao texto contido dentro dela.</li>
+        <li>< strong >: utilizado para destacar um texto com <strong>forte importância</strong>. O conteúdo interno normalmente é exibido em <strong>negrito</strong>.</li>
+        <li>< ol >: "ordered list" (lista ordenada) é usada para criar uma lista na qual a ordem dos itens é importante. Os itens da lista são numerados automaticamente ou marcados com outros tipos de ordem, como letras, números ou algarismos romanos. </li>
+        <li>< ul >: cria uma lista na qual a ordem dos itens não possui importância significativa. Os itens da lista são geralmente marcados com pontos ou símbolos de marcadores. </li>
+        <li>< li >: é usada para definir um item da lista em uma lista ordenada (< ol >) ou uma lista não ordenada (< ul >). Ela representa cada item individual dentro de uma lista. Então para cada item que desejamos adicionar em uma lista é necessário abrir e fechar uma tag lista: < li > Item da lista < /li >. </li>
+        <li>< sub >: define o texto subscrito. O texto subscrito aparece um pouco abaixo do texto normal e às vezes é renderizado em uma fonte menor. O texto subscrito pode ser usado para fórmulas químicas, como H<sub>2</sub>O</li>
+        <li>< sup >: define texto sobrescrito. O texto sobrescrito aparece um pouco acima do texto normal e às vezes é renderizado em uma fonte menor. Texto sobrescrito pode ser usado para indicar uma observação que será apresentada mais no final do página, como Artigo de Referência<sup>[1]</sup></li>
+        <li>< blockquote > usada para indicar que o texto contido dentro dela é uma citação de outro autor ou fonte. <blockquote>"Normalmente os navegadores web irão renderizar o conteúdo dentro de < blockquote > com uma formatação específica, como um recuo em relação ao restante do texto, para indicar visualmente que se trata de uma citação." </blockquote></li>
+    </ul>
+
+    <small><a href="#inicio">(Voltar ao início)</a></small>
+    <br>
+    <br>
+    <b>Referência Bibliográfica: </b>
+    <br>
+    W3SCHOOLS. HTML Tutorial. Disponível em: < https://www.w3schools.com/html/default.asp\ >. Acesso em: 21/02/2023.
+
+</body>
+</html>
